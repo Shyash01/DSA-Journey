@@ -2,9 +2,9 @@
 using namespace std;
 
 int main() {
-    // Unties C++ streams from C streams for lightning-fast execution
-    ios_base::sync_with_stdio(false); 
-    cin.tie(NULL); 
+ 
+    //Find Union of elements of an array
+    // Find Intersection of elements of an array
     
-    return 0;
+
 }

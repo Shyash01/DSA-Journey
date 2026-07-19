@@ -2,16 +2,19 @@
 using namespace std;
 
 bool checkzeroSum(vector<int> arr){
-      unordered_set<int>s;
-    int sum=0;
-    for(int i =0;i<arr.size();i++){
-        sum+=arr[i];
-        if(sum==0 || s.find(sum) != s.end()){
+    for(int i=0;i<arr.size();i++){
+        int sum=arr[i];
+        if(sum==0){
             return true;
         }
-        s.insert(sum);
-    }
 
+        for(int j=i+1;j<arr.size();j++){
+            sum+=arr[j];
+            if(sum==0){
+                return true;
+            }
+        }
+    }
 }
 
 int main() {
@@ -21,17 +24,11 @@ int main() {
 
 
     // For brute force : TC - O(n), SC = max(o(n,m))
-
-    // Optimized Approach -> USE Unordered SET
-    // TC -> O(n), SC -> O(n)
-    
     vector<int> arr = {4,2,-3,1,6};
     bool check = checkzeroSum(arr);
     if(check){
         cout<<"sub array found";
     };
-  
-    //4,2,-3,1,6
     
 
 }

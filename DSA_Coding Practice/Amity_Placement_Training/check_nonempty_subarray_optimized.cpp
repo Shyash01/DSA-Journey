@@ -21,9 +21,6 @@ int main() {
 
 
     // For brute force : TC - O(n), SC = max(o(n,m))
-
-    // Optimized Approach -> USE Unordered SET
-    // TC -> O(n), SC -> O(n)
     
     vector<int> arr = {4,2,-3,1,6};
     bool check = checkzeroSum(arr);

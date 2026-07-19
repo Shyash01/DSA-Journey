@@ -43,5 +43,6 @@
         "typeinfo": "cpp"
     },
     "github.copilot.editor.enableAutoCompletions": false,
-    "github.copilot.chat.reviewSelection.enabled": false
+    "github.copilot.chat.reviewSelection.enabled": false,
+    "C_Cpp.default.compilerPath": "C:/MinGW/bin/gcc.exe"
 }
