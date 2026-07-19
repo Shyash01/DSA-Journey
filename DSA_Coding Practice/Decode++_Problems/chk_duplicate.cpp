@@ -32,7 +32,6 @@ bool chkDuplicate(vector <int> nums){
         }
         seen.insert(num);
     }
-
     return false;
 }
 
