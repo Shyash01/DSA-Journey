@@ -15,13 +15,16 @@ int main(){
 
     display(v1);
 
+    int i=0;
+    int j=v1.size()-1;
 
-    vector <int> v2(v1.size());
-
-    for(int i=v1.size()-1;i>=0;i--){
-        v2[(v1.size()-1)-i] = v1[i];
+    while(i<j){
+        int temp = v1[i];
+        v1[i] = v1[j];
+        v1[j] = temp;
+        i++;
+        j--;
     }
 
-    display(v2);
-
+    display(v1);
 }
