@@ -24,7 +24,7 @@ int main()
     }
     v.pop_back();  // pop_back karne se capacity change nahi hoti
     
-
+    cout<<endl;
     
       for(int i=0;i<v.size();i++){
         cout<<v[i]<<" ";
