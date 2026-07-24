@@ -1,58 +1,52 @@
-// #include<bits/stdc++.h>
 #include<iostream>
 #include<vector>
-#include<algorithm>
-
+// #include<algorithm>
+// #include<bits/stdc++.h>
 
 using namespace std;
 
-void display(vector <int>&a){
-    for(int i =0;i<a.size();i++){
+void display(vector<int> & a){
+    for(int i=0;i<a.size();i++){
         cout<<a[i]<<" ";
-        
     }
     cout<<endl;
 }
 
-void reversePart(int i, int j,vector<int> & a){
-    while(i<=j){
+void reverse_part(int i, int j, vector<int>& a){
+
+    while(i<j){
         int temp = a[i];
         a[i] = a[j];
         a[j] = temp;
-
-        i++;
+         i++;
         j--;
     }
 
+   
 }
+
+
 int main(){
-    vector<int> v1 = {1,3,2,4,3,4,1,6};
+    vector<int> v = {1,6,2,3,7,4,8};
 
-    display(v1);
+    int k;
+    cout<<"Rotate By: ";
+    cin>>k;
 
-    // int i=0;
-    // int j=v1.size()-1;
+    int n = v.size();
+    if(n==0) return 0;
 
-    // while(i<j){
-    //     int temp = v1[i];
-    //     v1[i] = v1[j];
-    //     v1[j] = temp;
-    //     i++;
-    //     j--;
-    // }
 
-    // reverse(v1.begin(),v1.end()); // In built function
-    int i;
-    cout<<"Enter first index: ";
-    cin>>i;
+    if(k>n){
+        k=k%n;
+    }
 
-    int j;
-    cout<<"Enter last index: ";
-    cin>>j;
+    reverse_part(0,n-k-1,v);
+    reverse_part(n-k,n-1,v);
+    reverse_part(0,n-1,v);
+    display(v);
 
-    reversePart(i,j,v1);
 
-    display(v1);
 }
 
 
@@ -65,34 +59,57 @@ int main(){
 
 
 
+// Rotation using reversing -> My solution
+// // #include<bits/stdc++.h>
+// #include<iostream>
+// #include<vector>
+// #include<algorithm>
 
 
+// using namespace std;
+
+// void display(vector <int>&a){
+//     for(int i =0;i<a.size();i++){
+//         cout<<a[i]<<" ";
+        
+//     }
+//     cout<<endl;
+// }
+
+// void reversePart(int i,int k,vector<int> & a){
+
+//     int j = k;
+//     while(i<j){
+//         int temp = a[i];
+//         a[i] = a[j];
+//         a[j] = temp;
+
+//         i++;
+//         j--;
+//     }
+
+// }
+// int main(){
+//     vector<int> v1 = {1,3,2,4,3,4,1,6};
+
+//     display(v1);
+
+//     int k;
+//     cout<<"Enter Rotate Value: ";
+//     cin>>k;
 
 
+//     reversePart(0,v1.size()-1,v1);
+//     display(v1);
+//     cout<<endl;
 
+//     reversePart(0,k-1,v1);
+//     display(v1);
+//     cout<<endl;
+//     reversePart(k,v1.size()-1,v1);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//     display(v1);
+// }
 
 
 
@@ -125,7 +142,7 @@ int main(){
 
 // // }
 
-// // My Rotate O(N*K) ->
+// // My Rotate O(N*K) -> Costly Solution
 
 // void rotate(vector<int>& a,int k){
 //     int n = a.size();
