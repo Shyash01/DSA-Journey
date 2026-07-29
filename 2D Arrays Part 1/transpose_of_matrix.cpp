@@ -1,4 +1,4 @@
-#include<iostream>
+ #include<iostream>
 #include<climits>
 using namespace std;
 
@@ -11,26 +11,30 @@ int main(){
     cout<<"Enter number of columns: ";
     cin>>n;
 
-    int max = INT_MIN;
+
     cout<<"Enter array: "<<endl;
 
     int arr[m][n];
     for(int i=0;i<m;i++){
         for(int j=0;j<n;j++){
-            
             cin>>arr[i][j];
-            if(max<arr[i][j]){
-                max = arr[i][j];
-            }
+
         }
     }
 
-    cout<<"Maximum Element in given array is: "<<max<<endl;
+    int trans[n][m];
 
+     for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            trans[i][j] = arr[j][i];
+        }
+        cout<<endl;
+    }
+    
 
-    for(int i=0;i<m;i++){
-        for(int j=0;j<n;j++){
-            cout<<arr[i][j]<<" ";
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            cout<<trans[i][j]<<" ";
         }
         cout<<endl;
     }
