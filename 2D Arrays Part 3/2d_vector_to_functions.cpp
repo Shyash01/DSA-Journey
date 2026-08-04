@@ -6,6 +6,9 @@ using namespace std;
 void change2D_vector(vector< vector<int> > &v){
     v[0][0] = 100;
 }
+void length(vector< vector<int> > &v){
+    cout<<v[2].size();
+}
 int main(){
 
     // vector<int>
@@ -35,13 +38,11 @@ int main(){
     v.push_back(v2);
     v.push_back(v3);
 
-    cout<< v[0][0];
 
-
-    cout<<v[0][0]<<endl;
-    change2D_vector(v);
-    cout<<v[0][0]<<endl;
+    // cout<<v[0][0]<<endl;
+    // change2D_vector(v);
+    // cout<<v[0][0]<<endl;
 
     
-
+    length(v);
 }
