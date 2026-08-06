@@ -1,1 +1,1 @@
-    // cout<<str;
+s = "def" + s;

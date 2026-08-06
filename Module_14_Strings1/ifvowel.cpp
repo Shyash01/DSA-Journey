@@ -3,7 +3,14 @@
 using namespace std;
 
 int main(){
-    string s = "raghav";
+    int n;
+    cout<<"Enter length: ";
+    cin>>n;
+    char s [n];
+
+    for(int i=0;i<n;i++){
+        cin>>s[i];
+    }
     int count = 0;
     int i=0;
     while(s[i]!='\0'){
@@ -13,6 +20,7 @@ int main(){
         }
         i++;
     }
-    cout<<count;
+    cout<<count<<endl;
+    cout<<(int)s[n];
     
 }
