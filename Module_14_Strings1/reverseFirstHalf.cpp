@@ -14,6 +14,12 @@ int main(){
     reverse(str.begin(),str.begin()+len/2);
     cout<<str;
 
+    // string s = "abcdef";
+    // reverse(s.begin()+1,s.begin()+5);
+    // cout<<s;
+
+
+
 
 }
 

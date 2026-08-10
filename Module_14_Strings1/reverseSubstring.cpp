@@ -5,19 +5,31 @@ using namespace std;
 
 int main(){
 
-    string str;
-    getline(cin,str);
-    // reverse first half
-    int len = str.size();
+    // string str;
+    // getline(cin,str);
+    // // reverse first half
+    // int len = str.size();
+    // if(len<6){
+    //     cout<<"Try Again! \nEnter string greater than size 5";
+    //     return 0;
+    // }
+
+    // cout<<str<<endl;
+    // reverse(str.begin()+1,str.begin()+5);
+    // cout<<str;
+
+
+    string s;
+    getline(cin,s);
+
+    int len = s.size();
+
     if(len<6){
-        cout<<"Try Again! \nEnter string greater than size 5";
+        cout<<"Try Again! \nString should be greater than 5 length";
         return 0;
     }
-
-    cout<<str<<endl;
-    reverse(str.begin()+1,str.begin()+5);
-    cout<<str;
-
+    reverse(s.begin()+1,s.begin()+5);
+    cout<<s;
     return 0;
 
 }

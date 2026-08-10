@@ -38,6 +38,8 @@ int main(){
     //     }
     //  }
 
+
+    // More optimized version -> down 
     string s = "aabbaababaaasxwe87tgfai";
     int arr[26]={0};
     int n=s.length();
@@ -66,5 +68,31 @@ int main(){
         }
     }
 
-    
+    // //10/8/26 revision
+
+    // string s;
+    // getline(cin,s);
+    // int arr[26] = {0};
+   
+    // int len = s.size();
+    // for(int i=0;i<len;i++){
+        
+    //     int idx = (int)s[i];
+        
+    //     arr[idx-97]++;
+    // }
+
+    // int max = 0;
+    // int idx;
+
+    // for(int i=0;i<26;i++){
+    //      if(max<arr[i]){
+    //         max = arr[i]; 
+    //         idx = i;
+    //     }
+        
+    // }
+
+    // cout<<max<<" "<<(char)(97+idx);
+
 }

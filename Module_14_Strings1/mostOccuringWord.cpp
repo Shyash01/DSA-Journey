@@ -28,25 +28,25 @@ int main(){
     if(n==1){
         maxCount = count;
     }else{
-    //     for(int i=0;i<n-1;i++){
+    // //     for(int i=0;i<n-1;i++){
 
-    //     // if(v[i]==v[i+1]){
-    //     //     count++;
-    //     // }
-    //     // else{
-    //     //     if(maxCount<count){
-    //     //         maxCount = count;
-    //     //     }
-    //     //     count = 1;
-    //     // }
+    // //     // if(v[i]==v[i+1]){
+    // //     //     count++;
+    // //     // }
+    // //     // else{
+    // //     //     if(maxCount<count){
+    // //     //         maxCount = count;
+    // //     //     }
+    // //     //     count = 1;
+    // //     // }
         
-    //     // My code
-    //     // if(v[i]!=v[i+1]) count = 1;
-    //     // else{
-    //     //     count++;
-    //     //     if(maxCount<count) maxCount = count;  
-    //     // }    
-    // }
+    // //     // My code
+    // //     // if(v[i]!=v[i+1]) count = 1;
+    // //     // else{
+    // //     //     count++;
+    // //     //     if(maxCount<count) maxCount = count;  
+    // //     // }    
+    // // }
 
 
      // Sir's code: 
@@ -66,6 +66,47 @@ int main(){
         }
     }
     
+    // // revision 10/08/2026
+
+    // string s;
+    // getline(cin,s);
+
+    // vector<string> v;
+
+    // stringstream ss(s);
+    // string temp;
+
+    // while(ss>>temp){
+    //     v.push_back(temp);
+    // }
+
+    // int len = v.size();
+    // sort(v.begin(),v.end());
+
+    // if(len==0){
+    //     cout<<"String is empty";
+    //     return 1;
+    // }
+   
+    // int count = 1;
+    // int maxCount = 1;
+
+    // for(int i=0;i<len-1;i++){
+    //     if(v[i]==v[i+1]) count++;
+    //     else count = 1;
+    //     maxCount = max(maxCount,count);
+       
+    // }
+
+    // count =1;
+    // for(int i=0;i<len-1;i++){
+    //     if(v[i]==v[i-1]) count++;
+    //     else count =1;
+    //     if(count==maxCount){
+    //         cout<<endl<<v[i]<<" "<<maxCount;
+    //     }
+    // }
+
   
 
     
