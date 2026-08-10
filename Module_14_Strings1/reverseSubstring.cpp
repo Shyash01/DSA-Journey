@@ -19,18 +19,19 @@ int main(){
     // cout<<str;
 
 
-    string s;
-    getline(cin,s);
+    // Revision - 10/08/26
+    // string s;
+    // getline(cin,s);
 
-    int len = s.size();
+    // int len = s.size();
 
-    if(len<6){
-        cout<<"Try Again! \nString should be greater than 5 length";
-        return 0;
-    }
-    reverse(s.begin()+1,s.begin()+5);
-    cout<<s;
-    return 0;
+    // if(len<6){
+    //     cout<<"Try Again! \nString should be greater than 5 length";
+    //     return 0;
+    // }
+    // reverse(s.begin()+1,s.begin()+5);
+    // cout<<s;
+    // return 0;
 
 }
 

@@ -55,9 +55,5 @@ int main(){
     // reverse(str.begin(),str.end());
     // cout<<str;
 
-    string s = "Yash";
-    s.push_back('a');
-    cout<<s;
-    s.pop_back();
-    cout<<endl<<s;
+    
 }
