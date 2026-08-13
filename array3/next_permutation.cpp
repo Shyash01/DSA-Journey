@@ -23,8 +23,10 @@ void nextPermutation(vector<int>& nums) {
             reverse(nums.begin()+idx+1,nums.end());
             for(int i=0;i<nums.size();i++){
             cout<<nums[i]<<" ";
-    }
+            }
+
             cout<<endl;
+
             int temp = nums[idx];
             nums[idx]=nums[idx+1];
             nums[idx+1] = temp;
@@ -36,7 +38,7 @@ void nextPermutation(vector<int>& nums) {
 
     }
 int main(){
-    vector<int> nums = {1,1,5,9,2};
+    vector<int> nums = {1,4,5,3,2};
     for(int i=0;i<nums.size();i++){
         cout<<nums[i]<<" ";
     }
