@@ -9,9 +9,9 @@ int main()
     // push_back operation
 
     // v[0] = 6;
-    // v[1] = 1;    Gives segmentation fault because can not access element by using index value
-    //  v[2] = 9;   As before pushbak operation the size of vector is 0, that's why index doesn not refers to a placeholder
-    // v[3] = 8;
+    // v[1] = 1;   Gives segmentation fault because can not access element by using index value
+    // v[2] = 9;   As before push_back operation the size of vector is 0, that's why index doesn not refers to a placeholder
+    // v[3] = 8;   
 
     //  for inserting / for taking input do not use [] or index value
     // if the size is not given

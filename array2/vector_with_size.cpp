@@ -37,7 +37,7 @@ int main(){
         v.push_back(x);
     }
 
-      for(int i=0;i<5;i++){
+    for(int i=0;i<5;i++){
        cout<<v[i]<<" ";
     }
 
