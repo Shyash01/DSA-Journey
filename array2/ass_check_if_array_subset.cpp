@@ -3,14 +3,20 @@
 #include<vector>
 #include<algorithm>
 
+#include<unordered_map>
+
 using namespace std;
 
 bool chkArraySubset(vector<int>& arr1,vector<int>& arr2){
-    unordered_set<int> setB(arr2.begin(),arr2.end());
+    unordered_map<int,int> countB;
+
+    for(int num: arr2){
+        countB[num]++;
+    }
 
     for(int num : arr1){
-        if(setB.find(num)==setB.end())
-        return false;
+        if(countB[num]==0) return false;
+        countB[num]--;
     }
 
     return true;
@@ -18,8 +24,8 @@ bool chkArraySubset(vector<int>& arr1,vector<int>& arr2){
 
 int main(){
 
-    vector<int> arr2 = {10,40,30,50,20};
-    vector<int> arr1= {40,20,30};
+    vector<int> arr2 = {10,40,30,50,20,20,10,12,49,30,49,50,30,20,10};
+    vector<int> arr1= {40,20,30,20,30,40,55};
     
     
     if(chkArraySubset(arr1,arr2)){
@@ -32,6 +38,36 @@ int main(){
 }
 
 
+
+
+
+// Optimal Approach - For Array containing unique elements
+// Using Unordered_set
+// bool chkArraySubset(vector<int>& arr1,vector<int>& arr2){
+//     unordered_set<int> setB(arr2.begin(),arr2.end());
+
+//     for(int num : arr1){
+//         if(setB.find(num)==setB.end())
+//         return false;
+//     }
+
+//     return true;
+// }
+
+// int main(){
+
+//     vector<int> arr2 = {10,40,30,50,20};
+//     vector<int> arr1= {40,20,30};
+    
+    
+//     if(chkArraySubset(arr1,arr2)){
+//         cout<<"Array is Subset";
+//     }
+//     else{
+//         cout<<"Array is not a subset";
+//     }
+
+// }
 
 // Brute Force Approach: 
 
