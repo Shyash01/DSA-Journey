@@ -47,6 +47,4 @@ int main(){
     }
 
     cout<<endl;
-
-
 }
