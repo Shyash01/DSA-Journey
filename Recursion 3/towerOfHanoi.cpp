@@ -10,6 +10,6 @@ void hanoi(int n,char a, char b, char c){ // S H D
 
 }
 int main(){
-    int n=4;
+    int n=3;
     hanoi(n,'A','B','C');
 }
