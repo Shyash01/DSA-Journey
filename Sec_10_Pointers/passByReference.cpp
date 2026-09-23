@@ -11,12 +11,15 @@ void swap(int* x, int* y){
 
 int main(){
     int a, b;
-    cin>>a,b;
+    cin>>a;
+    cin>>b;
 
     int* x = &a;
     int* y = &b;
     
+    
+    cout<<x<<" "<<y<<endl;
     swap(x,y); 
     //swap(&a,&b);
-    cout<<a<<" "<<b;
+    cout<<x<<" "<<y;
 }
