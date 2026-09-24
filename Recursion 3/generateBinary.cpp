@@ -1,20 +1,16 @@
 #include<iostream>
 using namespace std;
 
-int n =3;
-
-void generate(string s){
+void generate(string s,int n){
     if(s.length()==n){
         cout<<s<<endl;
         return;
     } 
 
-    generate(s+"0");
-    generate(s+"1");
+    generate(s+"0",n);
+    if(s=="" || s[s.size()-1]!='1') generate(s+"1",n);
 }
 int main(){
-    int n;
-    cin>>n;
-    
-    generate("");
+    int n =4;
+    generate("",n);
 }
